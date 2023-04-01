@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    scroll-behavior: smooth;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(225, 225, 225);
+}
+
+.container{
+    background-color: white;
+    width: 95vw;
+    margin: auto;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    position: relative;
+
+    
+}
+
+.navBar{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 94%;
+    z-index: 100;
+    background-color: white;
+    padding-bottom: 10px;
+    top: 0;
+    
+}
+
+.navItem{
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+.profile{
+    position: relative;
+    display: flex;
+    height: auto;
+    top: 50px;
+    justify-content: space-around;
+    
+}
+
+.profileInfo{
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+.profileInfo p{
+    font-weight: 100;
+    color: rgb(71, 71, 71);
+}
+
+.profileInfo h1{
+    font-size: 50px;
+}
+
+.profileInfo h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(98, 98, 248);
+}
+
+.profilePhoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+.profilePhoto img{
+    border-radius: 20px;
+}
+
+#contact{
+    color: white;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(98, 98, 248);
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+#contact:hover{
+    background-color: rgb(67, 67, 248);
+    cursor: pointer;
+    width: 110px;
+
+}
+
+.sectionTitle{
+    font-size: 25px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+#education{
+    
+    height: 100px;
+}
+
+
+
+.education{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    
+    
+}
+
+
+.eduCard{
+
+    transform: scale(1);
+
+    transform-origin: 0%;
+    padding: 20px;
+    margin-left: 10px;
+    width: 300px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    transition: all 1s ease-in-out;
+    margin-bottom: 20px;
+
+
+    
+}
+
+.eduCard:hover{
+    background-color: rgb(52, 52, 52);
+    color: white;
+    width: 320px;
+    
+}
+
+
+
+.eduCard h1{
+    font-weight: 500;
+    color: rgb(98, 98, 248);
+    transition: all 1s ease-in-out;
+    
+    margin-bottom: 10px;
+}
+
+.eduCard:hover > h1{
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    
+}
+
+.eduCard h3{
+    font-weight: 400;
+}
+
+.eduCard h4{
+    font-weight: 100;
+}
+
+.skills{
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    justify-content: space-around;
+
+}
+
+.skill{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    
+
+
+}
+
+
+
+.projectList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projectItem{
+    position: relative;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.projectItem img{
+    transition: all 1s ease-in-out;
+    
+    overflow: hidden;
+}
+
+
+.projectItem a{
+    color: white;
+
+}
+
+.p{
+    position: absolute;
+    display: flex;
+    top: 4%;
+    flex-direction: column;
+    left: 30%;
+    visibility: hidden;
+}
+
+.projectName, .projectLink,.github{
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.projectItem:hover .p{
+    visibility: visible;
+}
+
+.projectItem:hover{
+    font-size: 10px;
+}
+
+.projectItem:hover img{
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+@keyframes animation {
+
+    from{
+        background-color: white;
+        color: black;
+
+    }
+    to{
+        background-color: black;
+        color: white;
+        transform: rotate(360deg);
+
+    }
+    
+}
+.hidden{
+    transform: translateX(-150px);
+    opacity: 0;
+
+}
+
+
+
+.show{
+    opacity: 1;
+    transform:translateX(0);
+
+    transition: all 1s ease-in-out;
+
+}
+
+
+@media only screen and (max-width:600px) {
+    
+    .navBar ul{
+        display: none;
+    }
+
+    .education{
+        flex-direction: column;
+    }
+
+    .profile{
+        flex-direction:column-reverse;
+        margin: 10px;
+        
+    }
+
+    .profilePhoto img{
+        width: 150px;
+        margin-top: 50px;
+    }
+    .profilePhoto{
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+
+    .navBar ul{
+        display: none;
+    }
+}
+
+
+
