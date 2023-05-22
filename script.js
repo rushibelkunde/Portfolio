@@ -2,7 +2,13 @@
 
 var skill = document.getElementsByClassName("skill");
 
+const contact = document.getElementById("contact");
 
+
+contact.addEventListener("click", ()=>{
+
+    alert("Email: rushibelkunde18@gmail.com \nMobile: +91 8421616957")
+})
 
 
 document.addEventListener("mouseover",(e)=>{
