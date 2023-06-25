@@ -20,6 +20,7 @@ body{
     background-color: rgb(225, 225, 225);
 }
 
+
 .container{
     background-color: white;
     width: 95vw;
@@ -93,6 +94,7 @@ body{
 }
 
 #contact{
+    display: flex;
     color: white;
     margin-top: 10px;
     width: 100px;
@@ -103,6 +105,9 @@ body{
     font-size: medium;
     font-weight: 600;
     transition: all 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #contact:hover{
@@ -120,7 +125,6 @@ body{
 }
 
 #education{
-    
     height: 100px;
 }
 
@@ -129,7 +133,6 @@ body{
 .education{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
     
     
 }
@@ -142,7 +145,7 @@ body{
     transform-origin: 0%;
     padding: 20px;
     margin-left: 10px;
-    width: 300px;
+    width: 250px;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
@@ -156,9 +159,18 @@ body{
 .eduCard:hover{
     background-color: rgb(52, 52, 52);
     color: white;
-    width: 320px;
+    width: 280px;
     
 }
+
+
+section{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
@@ -210,7 +222,9 @@ body{
 
 }
 
-
+#project{
+    margin-bottom: 20px;
+}
 
 .projectList{
     display: flex;
@@ -288,6 +302,27 @@ body{
     }
     
 } */
+
+#about{
+    padding-bottom: 200px;
+}
+
+#about-info{
+    margin: auto;
+    width: fit-content;
+    color: black;
+    border-radius: 10px;
+    padding: 15px; 
+    font-family: cursive;
+    font-size: small;
+}
+
+
+#sticky{
+    position: absolute;
+}
+
+
 .hidden{
     transform: translateX(-150px);
     opacity: 0;
@@ -313,6 +348,7 @@ body{
 
     .education{
         flex-direction: column;
+        margin-left: 20px;
     }
 
     .profile{
@@ -329,12 +365,27 @@ body{
         margin-top: 0px;
     }
 
+    section{
+        height: auto;
+        margin: 50px 0;
+        
+
+    }
+
+    .skills{
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width:800px){
 
     .navBar ul{
         display: none;
+    }
+
+    section{
+        height: auto;
     }
 }
 
